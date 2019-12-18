@@ -22,7 +22,7 @@ module.exports = {
   // and output it into /dist as bundle.js
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js'
+    filename: 'fusion.js'
   },
 
   // adding .ts and .tsx to resolve.extensions will help babel look for .ts and .tsx files to transpile
