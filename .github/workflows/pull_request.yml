@@ -1,0 +1,16 @@
+on: pull_request
+name: Add label to PR
+jobs:
+  pROpenedFilter:
+    name: PR opened filter
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: PR opened filter
+      uses: actions/bin/filter@master
+      with:
+        args: action opened
+    - name: PR Labeler
+      uses: TimonVS/pr-labeler@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
