@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "preversion": "npm run check-types & npm run build"
   },
   "author": "",
   "license": "ISC",
