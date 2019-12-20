@@ -11,6 +11,9 @@
     "check-types": "tsc",
     "preversion": "npm run check-types & npm run build"
   },
+  "files": [
+    "lib"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

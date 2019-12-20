@@ -28,7 +28,7 @@ module.exports = {
 
   // and output it into /dist as bundle.js
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/lib'),
     filename: '[name].js',
     library: 'lamplighter',
     libraryTarget: 'umd',
